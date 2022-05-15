@@ -8,11 +8,38 @@
     --accent-color: #F9ACBB;
 }
 
+
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+.section > h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    color: var(--neutral-color-3);
+    text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #0C667D;
 }
 
 
@@ -49,11 +76,11 @@
     background: url(images/hero.png);
     background-size: cover;
     height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .hero-content {
-    margin-left: 2rem;
-    margin-right: 2rem;
     height: 100%;
 
     display: flex;
@@ -119,14 +146,33 @@
 /* SAMPLES */
 .samples {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3%;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    background-color: var(--neutral-color-1);
+}
+
+.samples-content > h2 {
+    max-width: 70%;
+}
+
+/* created for the sole purpose of making the carousel a valid element for flexbox */
+.carousel-container {
+    width: 100%;
+    height: 40%;
 }
 
 .carousel {
     margin: 0 auto;
     max-width: 90%;
-    height: 50%;
+    height: 100%;
     position: relative;
-    background-color: #343434;
+    /* background-color: #343434; */
 }
 
 .carousel > ul {
@@ -162,11 +208,14 @@
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    color: rgba(250, 250, 250, 0.75);
     cursor: pointer;
     padding: 0 0.3rem;
     border-radius: .25rem;
     background-color: rgba(0, 0, 0, 0.1);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .carousel-button:hover, .carousel-button:focus {
@@ -175,12 +224,9 @@
 }
 
 .carousel-button.prev {
-    left: 1rem;
+    left: -1rem;
 }
 
 .carousel-button.next {
-    right: 1rem;
+    right: -1rem;
 }
-
-
-/* SAMPLES */
