@@ -26,6 +26,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.75rem 0.75rem 1rem;
+
+    z-index: 3;
 }
 
 .logo {
@@ -114,6 +116,71 @@
 }
 
 
+/* SAMPLES */
 .samples {
     height: 100vh;
 }
+
+.carousel {
+    margin: 0 auto;
+    max-width: 90%;
+    height: 50%;
+    position: relative;
+    background-color: #343434;
+}
+
+.carousel > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 0 0.3rem;
+    border-radius: .25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover, .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+
+/* SAMPLES */
