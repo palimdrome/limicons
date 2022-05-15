@@ -88,6 +88,7 @@
 .hero-btn {
     display: flex;
     justify-content: space-between;
+    /* add max-width here later to limit the size for desktop resolution */
 }
 
 .contact-me-btn, .check-portfolio-btn {
@@ -110,4 +111,9 @@
 
 .check-portfolio-btn {
     background-color: var(--accent-color);
+}
+
+
+.samples {
+    height: 100vh;
 }
