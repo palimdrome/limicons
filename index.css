@@ -61,7 +61,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
-    line-height: 18px;
+    line-height: 1.125rem;
     align-items: center;
     text-align: center;
 }
@@ -80,9 +80,8 @@
     padding-right: 2rem;
 }
 
-.hero-content {
+.hero {
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,9 +95,7 @@
     line-height: 3rem;
     display: flex;
     align-items: center;
-
     color: var(--neutral-color-3);
-
     text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,7 +106,6 @@
     font-size: 1rem;
     line-height: 1.5rem;
     color: var(--primary-color-1);
-
     width: 80%;
 }
 
@@ -157,7 +153,13 @@
     background-color: var(--neutral-color-1);
 }
 
-.samples-content > h2 {
+.samples-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.samples-header > h2 {
     max-width: 70%;
 }
 
@@ -172,7 +174,6 @@
     max-width: 90%;
     height: 100%;
     position: relative;
-    /* background-color: #343434; */
 }
 
 .carousel > ul {
