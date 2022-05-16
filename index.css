@@ -17,6 +17,17 @@
     font-family: 'Inter', sans-serif;
 }
 
+section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .section > h2 {
     font-family: 'Inter';
     font-style: normal;
@@ -24,7 +35,6 @@
     font-size: 32px;
     line-height: 39px;
     display: flex;
-    align-items: center;
 
     color: var(--neutral-color-3);
     text-shadow: 3px 4px 0px rgba(0, 0, 0, 0.1);
@@ -107,8 +117,6 @@ this pseudo element contains the background image and when the navbar is topmost
     background: url(images/hero.png);
     background-size: cover;
     height: 100vh;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 .hero {
@@ -178,16 +186,7 @@ this pseudo element contains the background image and when the navbar is topmost
     justify-content: center;
     gap: 3%;
 
-    padding-left: 2rem;
-    padding-right: 2rem;
-
     background-color: var(--neutral-color-1);
-}
-
-.samples-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 }
 
 .samples-header > h2 {
@@ -261,4 +260,43 @@ this pseudo element contains the background image and when the navbar is topmost
 
 .carousel-button.next {
     right: -1rem;
+}
+
+
+/* ABOUT */
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+
+    background-color: var(--neutral-color-1);
+}
+
+.profile-img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content > p {
+    width: 75%;
+}
+
+.contact-btn {
+    border-style: none;
+    border-radius: 3px;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    background: var(--primary-color-1);
+    color: var(--neutral-color-1);
+    font-weight: bold;
 }
