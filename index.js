@@ -19,3 +19,9 @@ window.addEventListener('scroll', function () {
     let windowPosition = window.scrollY > 0;
     navbar.classList.toggle('scrolling-active', windowPosition);
 })
+
+// makes the screen not shrink when a keyboard appears
+addEventListener("load", function() {
+    var viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+})
