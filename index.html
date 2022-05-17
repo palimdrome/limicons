@@ -31,6 +31,7 @@
 <body>
 
     <!-- TODO: Lessen code for buttons using property inheritance. -->
+    <!-- TODO: Make flex classes (classes that defines only the display property of the div) so display: flex will not be repeatedly used on every div. -->
 
     <nav class="navbar">
         <div class="logo">Lim's Flat Icons</div>
@@ -88,6 +89,56 @@
         <button class="contact-btn">Contact Me</button>
 
     </section>
-    <section></section>
+
+    <section class="contact">
+        <div class="contact-header section">
+            <h2>Interested?<br>Let's get in touch.</h2>
+            <div class="contact-details">
+                <div class="name">
+                    <span class="material-symbols-outlined md-16">account_circle</span>
+                    <p>Limuelle Alamil</p>
+                </div>
+                <div class="email">
+                    <span class="material-symbols-outlined md-16">mail</span>
+                    <p>ldc.alamil@gmail.com</p>
+                </div>
+                <div class="address">
+                    <span class="material-symbols-outlined md-16">home</span>
+                    <p>Panitan, Capiz</p>
+                </div>
+                <div class="phone">
+                    <span class="material-symbols-outlined md-16">phone_iphone</span>
+                    <p>0912-345-6789</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Message me now</h4>
+            <form action="">
+                <div class="input-field">
+                    <label for="uname">Name</label>
+                    <input type="text" name="uname" id="uname">
+                </div>
+
+                <div class="input-field">
+                    <label for="uemail">Email</label>
+                    <input type="email" name="uemail" id="uemail">
+                </div>
+
+                <div class="input-field">
+                    <label for="usubject">Subject</label>
+                    <input type="text" name="usubject" id="usubject">
+                </div>
+                
+                <div class="input-field">
+                    <label for="umessage">Message</label>
+                    <input type="text" name="umessage" id="umessage">
+                </div>
+                
+                <button class="submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
