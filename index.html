@@ -35,7 +35,7 @@
 <body>
 
     <!-- TODO: Lessen code for buttons using property inheritance. -->
-    <!-- TODO: Make flex classes (classes that defines only the display property of the div) so display: flex will not be repeatedly used on every div. -->
+    <!-- [DONE] TODO: Make flex classes (classes that defines only the display property of the div) so display: flex will not be repeatedly used on every div. -->
 
     <nav class="navbar">
         <div class="logo">Lim's Flat Icons</div>
@@ -44,10 +44,10 @@
 
     <section class="home">
 
-        <div class="hero">
-            <h1 class="hero-title">Hi! I'm Limuelle. <br> I design flat icons in PowerPoint.</h1>
-            <p class="hero-subtitle">Amet viverra semper sit ut faucibus ultrices. Eget nibh pellentesque leo ullamcorper. Quam pharetra, vulputate vulputate amet.</p>
-            <div class="hero-btn">
+        <div class="hero col">
+            <h1 class="hero-title row">Hi! I'm Limuelle. <br> I design flat icons in PowerPoint.</h1>
+            <p class="hero-subtitle row">Amet viverra semper sit ut faucibus ultrices. Eget nibh pellentesque leo ullamcorper. Quam pharetra, vulputate vulputate amet.</p>
+            <div class="hero-btn row">
                 <button class="contact-me-btn">Contact Me</button>
                 <button class="check-portfolio-btn">Check Portfolio</button>
             </div>
@@ -56,7 +56,7 @@
     </section>
 
 
-    <section class="samples">
+    <section class="samples col">
 
         <div class="samples-header section">
             <h2>Here are samples of my work.</h2>
@@ -83,10 +83,10 @@
 
     </section>
 
-    <section class="about">
+    <section class="about col">
 
         <img class="profile-img" src="images/profile-1.jpg" alt="">
-        <div class="about-content section">
+        <div class="about-content col section">
             <h2>About Me</h2>
             <p>Etiam amet augue cras enim. Purus molestie pulvinar curabitur lacus risus donec fringilla eu pulvinar. Amet lectus amet faucibus volutpat massa.</p>
         </div>
@@ -94,48 +94,48 @@
 
     </section>
 
-    <section class="contact">
+    <section class="contact col">
         <div class="contact-header section">
             <h2>Interested?<br>Let's get in touch.</h2>
-            <div class="contact-details">
-                <div class="name">
+            <div class="contact-details col">
+                <div class="name row">
                     <span class="material-symbols-outlined md-16">account_circle</span>
                     <p>Limuelle Alamil</p>
                 </div>
-                <div class="email">
+                <div class="email row">
                     <span class="material-symbols-outlined md-16">mail</span>
                     <p><a href="mailto:ldc.alamil@gmail.com">ldc.alamil@gmail.com</a></p>
                 </div>
-                <div class="address">
+                <div class="address row">
                     <span class="material-symbols-outlined md-16">home</span>
                     <p>Panitan, Capiz</p>
                 </div>
-                <div class="phone">
+                <div class="phone row">
                     <span class="material-symbols-outlined md-16">phone_iphone</span>
                     <p><a href="tel:09123456789">0912-345-6789</a></p>
                 </div>
             </div>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form col">
             <h3>Message me now</h4>
             <form action="">
-                <div class="input-field">
+                <div class="input-field col">
                     <label for="uname">Name</label>
                     <input type="text" name="uname" id="uname">
                 </div>
 
-                <div class="input-field">
+                <div class="input-field col">
                     <label for="uemail">Email</label>
                     <input type="email" name="uemail" id="uemail">
                 </div>
 
-                <div class="input-field">
+                <div class="input-field col">
                     <label for="usubject">Subject</label>
                     <input type="text" name="usubject" id="usubject">
                 </div>
                 
-                <div class="input-field-message">
+                <div class="input-field message col">
                     <label for="umessage">Message</label>
                     <textarea name="umessage" id="umessage" cols="30" rows="10"></textarea>
                 </div>
@@ -146,14 +146,14 @@
     </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content col">
             <div class="footer-title">
                 <span>Lim's Flat Icons</span>
                 <span>|</span>
                 <i class="fa-solid fa-copyright"></i>
                 <span>2022 All Rights Reserved</span>
             </div>
-            <div class="footer-links">
+            <div class="footer-links row">
                 <a href="https://www.linkedin.com/in/limuelle-alamil/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100007186186646"><i class="fa-brands fa-facebook-square"></i></a>
                 <a href="https://www.instagram.com/invites/contact/?i=dpndkdukp4uo&utm_content=nkwvnqo"><i class="fa-brands fa-instagram-square"></i></a>
