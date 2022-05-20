@@ -12,6 +12,7 @@
     --hero-subtitle-font-size: clamp(1.25rem, 1.5vw, 3rem);
 
     --big-btn-padding-top-bottom: clamp(0.75rem, 1.25vw, 1.25rem);
+    --small-btn-font-size: clamp(1rem, 1vw, 3rem);
 }
 
 
@@ -68,6 +69,16 @@ section {
 
 a {
     text-decoration: none;
+}
+
+.small-btn {
+    border-style: none;
+    border-radius: 3px;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color-1);
+    color: var(--neutral-color-1);
+    font-weight: bold;
+    font-size: var(--small-btn-font-size);
 }
 
 
@@ -213,7 +224,7 @@ this pseudo element contains the background image and when the navbar is topmost
 }
 
 .wrapper .carousel {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     padding: 0 30px;
 }
@@ -256,8 +267,6 @@ this pseudo element contains the background image and when the navbar is topmost
     background: var(--primary-color-2)!important;
 }
 
-.carousel-indicators li { visibility: hidden; }
-
 /* ABOUT */
 .about {
     justify-content: center;
@@ -268,7 +277,12 @@ this pseudo element contains the background image and when the navbar is topmost
 }
 
 .profile-img {
-    width: 70%;
+    background-size: cover;
+    width: clamp(12rem, 20vw, 30rem);
+}
+
+.profile-img > img {
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -279,16 +293,7 @@ this pseudo element contains the background image and when the navbar is topmost
 }
 
 .about-content > p {
-    width: 75%;
-}
-
-.contact-btn {
-    border-style: none;
-    border-radius: 3px;
-    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-    background: var(--primary-color-1);
-    color: var(--neutral-color-1);
-    font-weight: bold;
+    max-width: 25rem;
 }
 
 
@@ -379,22 +384,6 @@ input, textarea {
 
 #umessage {
     height: 70%;
-}
-
-.submit-btn {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-    text-align: center;
-    color: var(--neutral-color-1);
-
-    border-style: none;
-    background: #0C667D;
-    border-radius: 3px;
-
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    width: 30%;
 }
 
 /* FOOTER */
