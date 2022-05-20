@@ -79,7 +79,6 @@ a {
     font-size: var(--small-btn-font-size);
 }
 
-
 /* NAVBAR */
 .navbar {
     position: fixed;
@@ -337,7 +336,7 @@ this pseudo element contains the background image and when the navbar is topmost
 }
 
 .contact-form {
-    width: 100%;
+    max-width: 30rem;
     height: 55%;
     gap: 0.5rem;
 }
@@ -390,6 +389,22 @@ input, textarea {
 
 #umessage {
     height: 70%;
+}
+
+.submit-btn {
+    width: 35%;
+}
+
+@media (min-width: 600px) {
+    .contact {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contact-header, .contact-form {
+        width: 50%;
+    }
 }
 
 /* FOOTER */
