@@ -79,6 +79,13 @@ a {
     font-size: var(--small-btn-font-size);
 }
 
+@media (min-width: 900px) {
+    section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
 /* NAVBAR */
 .navbar {
     position: fixed;
@@ -135,7 +142,7 @@ this pseudo element contains the background image and when the navbar is topmost
 
 .scrolling-active.navbar::before {
     /* change this to 1 later */
-    opacity: 0;
+    opacity: 1;
 }
 
 
@@ -190,11 +197,31 @@ this pseudo element contains the background image and when the navbar is topmost
     background-color: var(--accent-color);
 }
 
+@media (min-width: 600px) {
+    .hero {
+        align-items: center;
+    }
+
+    .hero-title {
+        text-align: center;
+        max-width: 50rem;
+    }
+    
+    .hero-title ~ .subtitle {
+        text-align: center;
+        max-width: 40rem;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+}
+
 
 /* SAMPLES */
 .samples {
-    /* background-color: var(--neutral-color-1); */
-    background-color: var(--primary-color-1);
+    background-color: var(--neutral-color-1);
+    /* background-color: var(--primary-color-1); */
 }
 
 .samples-container {
@@ -277,8 +304,8 @@ this pseudo element contains the background image and when the navbar is topmost
     align-items: center;
     gap: 2.5%;
 
-    /* background-color: var(--neutral-color-1); */
-    background-color: var(--primary-color-2);
+    background-color: var(--neutral-color-1);
+    /* background-color: var(--primary-color-2); */
 }
 
 .profile-img {
