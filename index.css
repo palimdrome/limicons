@@ -204,6 +204,60 @@ this pseudo element contains the background image and when the navbar is topmost
     max-width: clamp(15rem, 30vw, 30rem);
 }
 
+.samples-container {
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper .carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.carousel .card {
+    line-height: 250px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 90px;
+    font-weight: 600;
+    margin: 20px 0;
+    border-radius: 5%;
+}
+
+.carousel .card img {
+    border-radius: 5%;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none!important;
+    margin: 0 5px;
+    border: 2px solid var(--primary-color-2)!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 45px;
+}
+
+.owl-dot:hover, .owl-dot.active {
+    background: var(--primary-color-2)!important;
+}
+
+.carousel-indicators li { visibility: hidden; }
+
 /* ABOUT */
 .about {
     justify-content: center;
