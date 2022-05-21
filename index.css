@@ -97,7 +97,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+    padding: 1rem 1.25rem 1rem 1.25rem;
 
     z-index: 3;
     background: none;
@@ -129,6 +129,10 @@ this pseudo element contains the background image and when the navbar is topmost
     color: var(--neutral-color-1);
 }
 
+.scrolling-active i, .scrolling-active span {
+    color: var(--neutral-color-1)
+}
+
 .scrolling-active.navbar::before {
     /* change this to 1 later */
     opacity: 1;
@@ -153,6 +157,30 @@ this pseudo element contains the background image and when the navbar is topmost
     padding: 1rem;
 }
 
+.logo {
+    color: var(--primary-color-1);
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+.logo.menu-link {
+    padding: 0.5rem;
+    width: %;
+    background-color: var(--neutral-color-1);
+    border-radius: 50%;
+}
+
+.logo > .bold {
+    font-weight: 900;
+}
+
+.fa-xmark {
+    color: var(--neutral-color-1);
+}
+
+.fa-xmark, .fa-bars {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
 .show {
     right: 0%;
 }
@@ -164,6 +192,7 @@ this pseudo element contains the background image and when the navbar is topmost
 }
 
 .menu-links {
+    color: var(--neutral-color-1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,6 +227,7 @@ this pseudo element contains the background image and when the navbar is topmost
     }
 
     .menu-links {
+        color: var(--neutral-color-3);
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
