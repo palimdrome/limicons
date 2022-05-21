@@ -14,11 +14,29 @@ buttons.forEach(button => {
     })
 })
 
+// NAVBAR SCROLL ANIMATION
 window.addEventListener('scroll', function () {
     let navbar = document.querySelector('nav');
     let windowPosition = window.scrollY > 0;
     navbar.classList.toggle('scrolling-active', windowPosition);
 })
+
+// SIDE MENU OF THE NAVBAR
+var menu = document.getElementsByClassName('menu') [0]
+var toggle = document.getElementsByClassName('toggle-btn') [0]
+var close = document.getElementsByClassName('close-btn') [0]
+
+if(toggle) {
+    toggle.addEventListener('click', () => {
+        menu.classList.add('show')
+    })
+}
+
+if(close) {
+    close.addEventListener('click', () => {
+        menu.classList.remove('show')
+    })
+}
 
 // makes the screen not shrink when a keyboard appears
 addEventListener("load", function() {

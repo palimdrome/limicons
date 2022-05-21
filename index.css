@@ -7,6 +7,8 @@
     --neutral-color-3: #343434;
     --accent-color: #F9ACBB;
     
+    /* TODO: Delete custom properties that were only used once and use the exact values instead. */
+
     --hero-title-font-size: clamp(3rem, 4.5vw, 10rem);
     --hero-title-line-height: clamp(3rem, 5vw, 10rem);
     --hero-subtitle-font-size: clamp(1.25rem, 1.5vw, 3rem);
@@ -123,19 +125,6 @@ this pseudo element contains the background image and when the navbar is topmost
     transition: opacity 0.25s ease;
 }
 
-.logo {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.125rem;
-    align-items: center;
-    text-align: center;
-}
-
-.material-symbols-outlined.md-40 {
-    font-size: 2.5rem;
-}
-
 .scrolling-active {
     color: var(--neutral-color-1);
 }
@@ -144,6 +133,81 @@ this pseudo element contains the background image and when the navbar is topmost
     /* change this to 1 later */
     opacity: 1;
 }
+
+.fa-pencil {
+    margin-right: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    transition: right 0.5s ease;
+
+    background-image: url(images/menu-bg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 45vw;
+    padding: 1rem;
+}
+
+.show {
+    right: 0%;
+}
+
+.close-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 50%;
+}
+
+/* when the screen is too big already */
+@media (min-width: 600px) {
+    .navbar {
+        padding: 1.75rem 2rem 1.75rem 2rem;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .close-btn {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: row;
+        position: static;
+    
+        background-image: none;
+        background-size: cover;
+        height: 100%;
+        width: 45vw;
+        padding: 0;
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 
 
 /* HOME */

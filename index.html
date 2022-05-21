@@ -43,10 +43,28 @@
     <!-- TODO: Lessen code for buttons using property inheritance. -->
     <!-- [DONE] TODO: Make flex classes (classes that defines only the display property of the div) so display: flex will not be repeatedly used on every div. -->
 
-    <nav class="navbar">
-        <div class="logo">Lim's Flat Icons</div>
-        <span class="material-symbols-outlined md-40">menu</span>
-    </nav>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-pencil"></i>
+                <span>Lim's Flat Icons</span>
+            </a>
+            <div class="menu">
+                <div class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="menu-links">
+                    <div class="link">Home</div>
+                    <div class="link">Samples</div>
+                    <div class="link">About</div>
+                    <div class="link">Contact</div>
+                </div>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
     <section class="home">
 
