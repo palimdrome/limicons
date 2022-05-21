@@ -97,7 +97,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+    padding: 1.5rem 1.25rem 1.5rem 1.25rem;
 
     z-index: 3;
     background: none;
@@ -130,12 +130,32 @@ this pseudo element contains the background image and when the navbar is topmost
 }
 
 .scrolling-active.navbar::before {
-    /* change this to 1 later */
     opacity: 1;
+}
+
+.scrolling-active .fa-pencil, .scrolling-active span {
+    color: var(--neutral-color-1);
+}
+
+.scrolling-active .menu {
+    color: var(--neutral-color-1)
 }
 
 .fa-pencil {
     margin-right: 0.5rem;
+}
+
+.logo {
+    color: var(--primary-color-1);
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+.logo > .bold {
+    font-weight: 900;
+}
+
+.fa-bars {
+    font-size: clamp(1.5rem, 2.5vw, 1.75rem);
 }
 
 .menu {
@@ -151,6 +171,8 @@ this pseudo element contains the background image and when the navbar is topmost
     height: 100vh;
     width: 45vw;
     padding: 1rem;
+
+    color: var(--neutral-color-1);
 }
 
 .show {
@@ -161,6 +183,10 @@ this pseudo element contains the background image and when the navbar is topmost
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.fa-xmark {
+    font-size: clamp(1.75rem, 2.5vw, 2rem);
 }
 
 .menu-links {
@@ -195,6 +221,8 @@ this pseudo element contains the background image and when the navbar is topmost
         height: 100%;
         width: 45vw;
         padding: 0;
+
+        color: var(--neutral-color-3);
     }
 
     .menu-links {
@@ -397,6 +425,7 @@ this pseudo element contains the background image and when the navbar is topmost
 .contact {
     justify-content: center;
     gap: 1.25rem;
+    background-color: var(--neutral-color-1);
 }
 
 .contact-header {
@@ -473,7 +502,7 @@ div.input-field.message {
 
 input, textarea {
     height: 50%;
-    border: 0.2px solid var(--primary-color-1);
+    border: 0.2px solid var(--primary-color-2);
     border-radius: 2px;
     padding: 0.25rem;
 }
@@ -524,7 +553,7 @@ span:first-child {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 1.25vw, 1.5rem);
 }
 
 .footer-links {
@@ -533,4 +562,11 @@ span:first-child {
 
 .fa-brands {
     font-size: 1.25rem;
+}
+
+@media (min-width: 900px) {
+    section {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
 }
