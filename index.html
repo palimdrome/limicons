@@ -40,13 +40,13 @@
 </head>
 <body>
 
-    <!-- TODO: Lessen code for buttons using property inheritance. -->
+    <!-- [DONE] STODO: Lessen code for buttons using property inheritance. -->
     <!-- [DONE] TODO: Make flex classes (classes that defines only the display property of the div) so display: flex will not be repeatedly used on every div. -->
 
-    <header class="header">
+    <header class="header" id="header">
         <nav class="navbar">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-pencil"></i>
+            <a class="logo" href="#home" >
+                <i class="fa-solid fa-palette"></i>
                 <span class="bold">Lim's</span>
                 <span>Flat Icons</span>
             </a>
@@ -55,10 +55,10 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div class="menu-links">
-                    <div class="link">Home</div>
-                    <div class="link">Samples</div>
-                    <div class="link">About</div>
-                    <div class="link">Contact</div>
+                    <a class="link" href="#home">Home</a>
+                    <a class="link" href="#samples">Icons</a>
+                    <a class="link" href="#about">About</a>
+                    <a class="link" href="#contact">Contact</a>
                 </div>
             </div>
             <div class="toggle-btn">
@@ -67,7 +67,7 @@
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
 
         <div class="hero col">
             <h1 class="hero-title row">Hi! I'm Limuelle. <br> I design flat icons in PowerPoint.</h1>
@@ -81,7 +81,7 @@
     </section>
 
 
-    <section class="samples col">
+    <section class="samples col" id="samples">
 
         <div class="samples-container col">
             <div class="samples-header section col">
@@ -111,7 +111,7 @@
 
     </section>
 
-    <section class="about col">
+    <section class="about col" id="about">
 
         <div class="profile-img">
         <img src="images/profile-1.jpg" alt="">
@@ -125,25 +125,25 @@
 
     </section>
 
-    <section class="contact col">
+    <section class="contact col" id="contact">
 
         <div class="contact-header section">
             <h2>Interested?<br>Let's get in touch.</h2>
             <div class="contact-details col">
                 <div class="name row">
-                    <span class="material-symbols-outlined md-16">account_circle</span>
+                    <i class="fa-solid fa-id-card"></i>
                     <p>Limuelle Alamil</p>
                 </div>
                 <div class="email row">
-                    <span class="material-symbols-outlined md-16">mail</span>
+                    <i class="fa-solid fa-envelope"></i>
                     <p><a href="mailto:ldc.alamil@gmail.com">ldc.alamil@gmail.com</a></p>
                 </div>
                 <div class="address row">
-                    <span class="material-symbols-outlined md-16">home</span>
+                    <i class="fa-solid fa-location-dot"></i>
                     <p>Panitan, Capiz</p>
                 </div>
                 <div class="phone row">
-                    <span class="material-symbols-outlined md-16">phone_iphone</span>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
                     <p><a href="tel:09123456789">0912-345-6789</a></p>
                 </div>
             </div>

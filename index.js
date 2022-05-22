@@ -38,6 +38,11 @@ if(close) {
     })
 }
 
+// SMOOTH SCROLL
+$('.link').click(function(){
+    $('html').css("scrollBehavior", "smooth");
+});
+
 // makes the screen not shrink when a keyboard appears
 addEventListener("load", function() {
     var viewport = document.querySelector("meta[name=viewport]");
