@@ -232,6 +232,10 @@ navbar which will then shoulder the changes in opacity.*/
     max-width: 35rem;
 }
 
+.auto-input {
+    color: var(--primary-color-1);
+}
+
 .hero .subtitle {
     max-width: 30rem;
 }
@@ -544,6 +548,8 @@ footer a {
     }
 
     .hero .title {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         max-width: 50rem;
     }

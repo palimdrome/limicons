@@ -57,3 +57,11 @@ $(".carousel").owlCarousel({
         }
     }
 });
+
+
+var typed = new Typed(".auto-input", {
+    strings: ["Adventure", "Lifestyle", "Passion", "Imagination"],
+    typeSpeed: 80,
+    backSpeed: 50,
+    loop: true
+})
