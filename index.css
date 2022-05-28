@@ -417,6 +417,12 @@ navbar which will then shoulder the changes in opacity.*/
     gap: 0.5rem;
 }
 
+/* TODO: remove this once the form is functional */
+#contact .container p {
+    font-size: 0.75rem;
+    color: red;
+}
+
 #contact .container h3 {
     font-weight: 700;
     font-size: 1.25rem;
@@ -428,6 +434,11 @@ navbar which will then shoulder the changes in opacity.*/
 #contact form {
     height: 100%;
     gap: 0.25rem;
+
+    /* TODO: remove this once the form is functional */
+    padding: 1rem;
+    border: 2px solid red;
+    border-radius: 1%;
 }
 
 #contact label {
